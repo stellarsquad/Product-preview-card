@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  /* Neutral */
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Fraunces", serif;
+  background-color: var(--cream);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.product-container {
+  background-color: var(--white);
+  border-radius: 25px;
+  width: 650px;
+  box-shadow: 0px 0px 20px 20px rgba(215, 210, 210, 0.2);
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+}
+
+.content img {
+  width: 50%;
+  transition: all 0.7s;
+  border-radius: 25px 0px 0px 25px;
+}
+
+.content img:hover {
+  transform: scale(1.1);
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 2rem 2rem;
+  width: 50%;
+}
+
+.name p {
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--dark-grayish-blue);
+}
+
+.name h1 {
+  font-family: "Fraunces";
+  line-height: 1em;
+  font-weight: 700;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.description p {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8em;
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.prices {
+  display: flex;
+  /* justify-content: stretch; */
+  column-gap: 20px;
+  align-items: center;
+  margin-bottom: 29px;
+}
+
+.prices .main-price {
+  font-size: 40px;
+  color: var(--dark-cyan);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.prices .second-price {
+  font-size: 15px;
+  text-decoration: line-through;
+  color: var(--dark-grayish-blue);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.icon {
+  font-weight: 500;
+  height: 20px;
+  width: 20px;
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--dark-cyan);
+  cursor: pointer;
+  box-shadow: 2px 2px 0 var(--dark-cyan) inset,
+    -2px -2px 0 var(--dark-cyan) inset;
+}
+
+.btn:hover .icon {
+  color: var(--dark-cyan);
+}
+
+@media (max-width: 768px) {
+}
